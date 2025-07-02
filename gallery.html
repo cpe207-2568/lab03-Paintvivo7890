@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Paint's Profile</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-soft: #fdf6f0;
+      --card-bg: #f2f2f2;
+      --gold-nude: #bfa382;
+      --text-main: #4a3f35;
+      --text-sub: #6e6560;
+      --shadow-light: rgba(191, 163, 130, 0.15);
+      --shadow-strong: rgba(191, 163, 130, 0.3);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-soft);
+      color: var(--text-main);
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h5 {
+      font-family: 'DM Serif Display', serif;
+      color: var(--gold-nude);
+    }
+
+    nav {
+      background-color: #ffffffaa;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .navbar-brand {
+      color: var(--gold-nude) !important;
+      font-weight: 700;
+      font-family: 'DM Serif Display', serif;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+      color: #a68f62;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: var(--text-main) !important;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--gold-nude) !important;
+    }
+
+   
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .gallery-card {
+      flex: 1 1 280px;
+      max-width: 320px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px var(--shadow-light);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 40px var(--shadow-strong);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold-nude);
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: var(--text-main);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Paint's Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="exp.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>📸 My Gallery</h1>
+
+  <div class="gallery-container">
+    <!-- 12 Cards -->
+    <!-- 1 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/cafe.png" class="card-img-top" alt="Cafe with myfriend">
+        <div class="card-body">
+          <h5 class="card-title">Cafe with myfriend</h5>
+          <p class="card-text">Went to a café with friends during the school break</p>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/me.png" class="card-img-top" alt="Chiang Mai">
+        <div class="card-body">
+          <h5 class="card-title">Chiang Mai</h5>
+          <p class="card-text">Took a walk in a public park in Chiang Mai.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/Photo. with NWJPG.JPG" class="card-img-top" alt="Photo Booth!!!">
+        <div class="card-body">
+          <h5 class="card-title">Photo Booth!!!</h5>
+          <p class="card-text">Took photo booth pictures with friends at Maya.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/P&B.png" class="card-img-top" alt="Old friend">
+        <div class="card-body">
+          <h5 class="card-title">Old friend</h5>
+          <p class="card-text">Photo booth with high school friends.When friends came to <br>Chiang Mai, I took them on a fun tour around the city.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/movie.png" class="card-img-top" alt="Movieee">
+        <div class="card-body">
+          <h5 class="card-title">Movieee</h5>
+          <p class="card-text">Watched the movie How to Train Your Dragon 2 with friends <br>— it was so much fun!.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 6 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/san 3000.JPG" class="card-img-top" alt="The first event">
+        <div class="card-body">
+          <h5 class="card-title">The first event</h5>
+          <p class="card-text">The first event I worked on as a second-year student was a public relations job for my faculty.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 7 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/all En.JPG" class="card-img-top" alt="Group Photo Entaneer">
+        <div class="card-body">
+          <h5 class="card-title">Group Photo Entaneer</h5>
+          <p class="card-text"> Our first group photo by batch after the freshman hiking event up the mountain. </p>
+        </div>
+      </div>
+    </div>
+    <!-- 8 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/doi.JPG" class="card-img-top" alt="Cmu Trekking2024">
+        <div class="card-body">
+          <h5 class="card-title">Cmu Trekking2024</h5>
+          <p class="card-text">The atmosphere during the freshman mountain hike was a 14-kilometer run up Doi Suthep <br> tiring but the friendships made along the way were really great.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/3rd.JPG" class="card-img-top" alt="Futsal Freshmen Game 2024">
+        <div class="card-body">
+          <h5 class="card-title">Futsal Freshmen Game 2024</h5>
+          <p class="card-text">Freshy Games award: 3rd place in futsal. </p>
+        </div>
+      </div>
+    </div>
+    <!-- 10 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/Last match.JPG" class="card-img-top" alt="Football Match">
+        <div class="card-body">
+          <h5 class="card-title">Football Match</h5>
+          <p class="card-text">The last football match I played in, and we got 2nd place.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 11 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/Sabu.png" class="card-img-top" alt="Shabu lover">
+        <div class="card-body">
+          <h5 class="card-title">Shabu lover</h5>
+          <p class="card-text">Shabu Lover is my go-to menu for every season.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 12 -->
+    <div class="gallery-card">
+      <div class="card">
+        <img src="images/Gallery/bingsu.png" class="card-img-top" alt="Bingsu Time">
+        <div class="card-body">
+          <h5 class="card-title">Bingsu Time</h5>
+          <p class="card-text">Bingsu, a dessert I have to eat every Sunday, where we sit and chat warmly.
+
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

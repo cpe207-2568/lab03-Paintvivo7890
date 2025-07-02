@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Paint's Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=DM+Serif+Display&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-wrapper {
+      background-color: var(--card-bg);
+      border-radius: 1.5rem;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .social-links {
+      margin-top: 1.5rem;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0.5rem 0.8rem 0 0;
+      text-decoration: none;
+      color: var(--gold-nude);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #a68f62;
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      color: var(--gold-nude);
+    }
+
+    @media (max-width: 576px) {
+      .contact-wrapper {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Paint's Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="exp.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+ <!-- Contact Section -->
+<section class="container my-5" style="max-width: 720px;">
+  <h2 class="section-title text-center mb-5">Contact Me</h2>
+  <div class="contact-wrapper p-4">
+    <div class="row align-items-center g-4">
+      <!-- รูปซ้าย -->
+      <div class="col-md-5 text-center">
+        <img
+          src="images/Home/Paint.JPG"
+          alt="Paint"
+          class="img-fluid rounded-circle shadow"
+          style="max-width: 220px; border: 4px solid var(--gold-nude);"
+        />
+      </div>
+
+      <!-- ข้อความขวา -->
+      <div class="col-md-7 text-start">
+        <div class="contact-info mb-4" style="font-size: 1.1rem; line-height: 1.5;">
+          <p><strong>Name:</strong> Narudee Sornsawat</p>
+          <p><strong>Nickname:</strong> Paint</p>
+          <p><strong>Email:</strong> paintvivo@gmail.com</p>
+          <p><strong>Phone:</strong> 089-393-9249</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1DF1HTETNS/?mibextid=wwXIfr" target="_blank">🌐 Facebook</a>
+          <a href="https://www.instagram.com/paintt.3?igsh=MWxndWppeWt5Z2c4OQ%3D%3D&utm_source=qr" target="_blank">📸 Instagram</a>
+          <a href="https://line.me/ti/p/TaLuP8w_YF" target="_blank">✉️ Line</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
